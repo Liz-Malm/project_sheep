@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae0570f9-29a0-45eb-bb42-af68e2d5ed8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/site/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/assets/ParkMap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/assets/dining_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/assets/jskp_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/assets/park_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/assets/safari_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/assets/vip_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/dinoapp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/jurap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Liz-Malm/project_sheep.git",
+    "accountId": "1505c295-b7ac-496f-8bc6-59b601223af3"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3978d9Hjf7ZYIK46h2zl07eDJOl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/elizabethmalm/Documents/Programmering/Programmering_VT_2026/project_sheep/site",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.127" />
+        <option value="bundled-python-sdk-3944b0c99280-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae0570f9-29a0-45eb-bb42-af68e2d5ed8b" name="Changes" comment="" />
+      <created>1770035832659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770035832659</updated>
+      <workItem from="1770035833688" duration="154000" />
+      <workItem from="1770036008762" duration="248000" />
+      <workItem from="1770036324736" duration="26000" />
+      <workItem from="1770108298530" duration="421000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Testing sync to PyCharm from Github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing sync to PyCharm from Github" />
+  </component>
+</project>
