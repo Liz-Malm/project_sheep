@@ -1,0 +1,16 @@
+# Virtuell miljö
+.venv/
+venv/
+ENV/
+
+# PyCharm-specifika filer
+.idea/
+
+# Robot Framework loggar och rapporter
+output.xml
+log.html
+report.html
+
+# Python cache-filer
+__pycache__/
+*.pyc

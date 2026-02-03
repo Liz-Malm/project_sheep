@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ae0570f9-29a0-45eb-bb42-af68e2d5ed8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/site/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/assets/ParkMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/assets/dining_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/assets/jskp_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/assets/park_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/assets/safari_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/assets/vip_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/dinoapp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/jurap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +16,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Liz-Malm/project_sheep.git",
-    "accountId": "1505c295-b7ac-496f-8bc6-59b601223af3"
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Bjorang"
   }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Liz-Malm/project_sheep",
+    "accountId": "a0ece7d6-9e78-422b-ae54-a19e2a8df366"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -38,22 +43,32 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/elizabethmalm/Documents/Programmering/Programmering_VT_2026/project_sheep/site",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.127" />
-        <option value="bundled-python-sdk-3944b0c99280-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.127" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.308" />
+        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
       </set>
     </attachedChunks>
   </component>
@@ -71,6 +86,7 @@
       <workItem from="1770036008762" duration="248000" />
       <workItem from="1770036324736" duration="26000" />
       <workItem from="1770108298530" duration="421000" />
+      <workItem from="1770108864056" duration="567000" />
     </task>
     <servers />
   </component>
