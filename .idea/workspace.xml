@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae0570f9-29a0-45eb-bb42-af68e2d5ed8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ae0570f9-29a0-45eb-bb42-af68e2d5ed8b" name="Changes" comment="Lagt till .gitignore för att exkludera venv och loggar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +85,17 @@
       <workItem from="1770036008762" duration="248000" />
       <workItem from="1770036324736" duration="26000" />
       <workItem from="1770108298530" duration="421000" />
-      <workItem from="1770108864056" duration="567000" />
+      <workItem from="1770108864056" duration="1559000" />
     </task>
+    <task id="LOCAL-00001" summary="Lagt till .gitignore för att exkludera venv och loggar">
+      <option name="closed" value="true" />
+      <created>1770109698157</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770109698158</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing sync to PyCharm from Github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing sync to PyCharm from Github" />
+    <MESSAGE value="Lagt till .gitignore för att exkludera venv och loggar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till .gitignore för att exkludera venv och loggar" />
   </component>
 </project>
