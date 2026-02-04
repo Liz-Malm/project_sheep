@@ -4,3 +4,10 @@ Skapa en 4 testsuits för negativ testning. (VG, inviduellt)
 
 Test suit 1:
 Öppna hemsidan http://localhost:8000/jurap.html
+
+Scenarion:'
+1. Barn som vill läsa om Dinosaurier och titta på och Spara ner bilder.
+
+2. Förälder som vill boka biljett (Bra datorvana).
+
+3. Reseledare som vill boka många biljetter och safari, låg datorvana.
