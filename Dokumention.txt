@@ -5,9 +5,22 @@ Skapa en 4 testsuits för negativ testning. (VG, inviduellt)
 Test suit 1:
 Öppna hemsidan http://localhost:8000/jurap.html
 
-Scenarion:'
+Personas:
 1. Barn som vill läsa om Dinosaurier och titta på och Spara ner bilder.
 
 2. Förälder som vill boka biljett (Bra datorvana).
 
-3. Reseledare som vill boka många biljetter och safari, låg datorvana.
+3. Reseledare som vill boka många biljetter och safari, (låg datorvana.)
+
+Testdesign: Jurasstina-Kalle Park
+
+Test-ID            Funktion             Beskrivning             Persona
+-----------------------------------------------------------------------------
+
+TS-01              Boka Safari          Reseledare vill boka    Reseledare
+                                        Biljetter och Safari
+                                        till 12 st personer i
+                                        olika åldrar och olika
+                                        Safari turer.
+
+TS-02
