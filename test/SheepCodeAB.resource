@@ -21,7 +21,9 @@ Välj biljettyp
 Välj antal
     [Arguments]    ${antal}
       Input Text    id:ticket-quantity    ${antal}
-
+      Sleep    1 seconds
 Lägg i varukorgen
       Click Button    //*[@id="ticket-form"]/button
+      Sleep    2 seconds
+      Handle Alert    ok
         
