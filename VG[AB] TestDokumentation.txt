@@ -1,2 +1,7 @@
 Test-ID AB-NEG-01
     Kritiskt Steg Safari-Bokning
+    Testa olika datum format
+    Testa olika datum dåtid, framtid, dagens datum.
+    Testa olika paket med olika biljetter.
+    Testa olika datum tillsammans med paketen
+    Testa att köpa paket utan inträdesbiljett
