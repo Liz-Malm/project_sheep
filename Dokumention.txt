@@ -2,6 +2,8 @@ Skapa 3 st testsuits som testar hemsidan Jurasstina-Kalle Park
 Använd BDD Testing (Gherkin eller personas)
 Skapa en 4 testsuits för negativ testning. (VG, inviduellt)
 
+Hej
+
 Test suit 1:
 Öppna hemsidan http://localhost:8000/jurap.html
 
