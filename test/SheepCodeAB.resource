@@ -24,6 +24,14 @@ Välj antal
       Sleep    1 seconds
 Lägg i varukorgen
       Click Button    //*[@id="ticket-form"]/button
-      Sleep    2 seconds
-      Handle Alert    ok
-        
+      #Alert Should Be Present    You must be logged in to purchase tickets.
+      Handle Alert    ACCEPT
+
+Logga in
+    [Arguments]    ${username}    ${password}
+        Input Text    id:login-username    ${username}
+        Input Text    id:login-password    ${password}
+Tryck login
+        Click Button    Login
+        Wait Until Page Contains Element    id:login-message
+        Sleep    5 seconds

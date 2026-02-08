@@ -4,15 +4,17 @@ Suite Setup    Besökare navigerar till KallePark
 Suite Teardown    Close Browser
 
 *** Test Cases ***
-Bokning av safari.
+Bokning av biljett.
     [Tags]    [TS-01.1]   Reseledare    [G-PS]
-    [Documentation]    Reseledaren beställer 12 biljetter och safari
+    [Documentation]    Reseledaren beställer X antal biljetter av en viss typ
     Klicka på "Buy Tickets"
-    Välj biljettyp    Child    VIP    #Regular eller VIP
-    Välj Antal    1000
-    Välj Antal    -1
-    Välj Antal    0
-    Välj antal    8
+    Välj biljettyp    biljettyp=Child    kategori=VIP    #Adult,Child,Senior   #Regular eller VIP
+    Välj antal    88    #Välj antal biljetter
+    Välj antal    8    #Välj antal biljetter
     Lägg i varukorgen
-
     
+Logga in
+    [Tags]    [TS-01.2]    Reseledare    [G-PS]
+    [Documentation]    Reseledaren har blivit skickad till login-sidan.
+    Logga In    username="reseledaren@company.se"     password=1234
+    Tryck Login
