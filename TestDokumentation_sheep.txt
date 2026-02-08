@@ -58,6 +58,9 @@ Observationer: TS-01.2
 Användbarhetsanalys:
 * Lägg till en knapp bredvid logga in.
 
+TS-01.3              Boka Safari         Reseledare blir hittar knappen     Reseledare
+                                         "Register" och försöker registrera
+                                         ett nytt konto.
 
 
 
