@@ -10,7 +10,7 @@ Personas:
 
 2.(Bra datorvana) Förälder som vill boka biljett.
 
-3. (låg datorvana.) Reseledare som vill boka många biljetter och safari, hon har aldrig besökt hemsidan förut.
+3. (låg datorvana.) Reseledare som vill boka biljetter till ett större sällskap i olika åldrar., hon har aldrig besökt hemsidan förut.
 Hon vill ha en smidig och snabb upplevelse, så hon kan gå vidare till nästa uppgift i sitt jobb.
 
 Testdesign: Jurasstina-Kalle Park
@@ -58,9 +58,19 @@ Observationer: TS-01.2
 Användbarhetsanalys:
 * Lägg till en knapp bredvid logga in.
 
-TS-01.3              Boka Safari         Reseledare blir hittar knappen     Reseledare
-                                         "Register" och försöker registrera
-                                         ett nytt konto.
+TS-01.3              Boka Safari         Reseledare hittar knappen    Reseledare
+                                         "Register" och försöker
+                                         registrera ett nytt konto.
+
+Observationer: TS-01.3
+När användaren skriver in lösenord så får hon ingen indikation att lösenordet är för kort förän denna trycker på knappen
+Register
+
+
+Användbarhetsanalys:
+Tydligare information om hur lösenordet ska skapas. (Minst antal tecken, Specialtecken mm)
+Visa tydligt när ett nytt lösenord når upp till kriterierna.
+
 
 
 
