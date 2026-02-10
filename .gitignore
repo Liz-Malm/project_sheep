@@ -10,6 +10,7 @@ ENV/
 output.xml
 log.html
 report.html
+*.png
 
 # Python cache-filer
 __pycache__/

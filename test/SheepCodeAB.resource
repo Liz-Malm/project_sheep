@@ -29,9 +29,45 @@ Lägg i varukorgen
 
 Logga in
     [Arguments]    ${username}    ${password}
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    id:login-section
+        IF    not ${is_visible}
+            Click Link    Login
+            Wait Until Element Is Visible    id:login-section    timeout=5s
+      END
         Input Text    id:login-username    ${username}
         Input Text    id:login-password    ${password}
 Tryck login
         Click Button    Login
         Wait Until Page Contains Element    id:login-message
         Sleep    5 seconds
+
+Klicka på Register
+        Click Element    id:register-nav
+Användaruppgifter
+    [Arguments]    ${nytt_username}    ${nytt_password}
+        Input Text    id:reg-username    ${nytt_username}
+        Input Text    id:reg-password    ${nytt_password}
+Tryck Registrera
+    [Arguments]    ${förväntat_svar}
+        Click Button    Register
+        Wait Until Page Contains    ${förväntat_svar}
+        IF    '${förväntat_svar}' == 'Registration successful! Redirecting to login...'
+        Wait Until Element Is Visible    id:login-section    timeout=5s
+        Element Should Contain    id:login-section    Login
+        END
+
+Logga in igen
+        [Arguments]    ${nytt_username}    ${nytt_password}
+        ${is_visible}=    Run Keyword And Return Status    Element Should Be Visible    id:login-section
+        IF    not ${is_visible}
+            Click Link    Login
+            Wait Until Element Is Visible    id:login-section    timeout=5s
+      END
+        Input Text    id:login-username    ${nytt_username}
+        Input Text    id:login-password    ${nytt_password}
+
+Tryck login igen
+        Click Button    Login
+        #Wait Until Page Contains Element    id:login-message
+        Wait Until Page Contains Element    id:home-section
+        Sleep    2s
