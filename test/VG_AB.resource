@@ -9,7 +9,7 @@ ${BROWSER}       chrome
 Besökare navigerar till KallePark
     Open Browser    ${BASE_URL}    ${BROWSER}
      Maximize Browser Window
-     Set Selenium Speed    1 seconds
+
 Klicka på Register
         Click Element    id:register-nav
 Användaruppgifter
@@ -32,21 +32,61 @@ Logga in
             Click Link    Login
             Wait Until Element Is Visible    id:login-section    timeout=5s
         END
-        Input Text    id:login-username    ${username}
-        Input Text    id:login-password    ${password}
+        Input Text    id:login-username    ${nytt_username}
+        Input Text    id:login-password    ${nytt_password}
 Tryck login
         Click Button    Login
         Wait Until Page Contains Element    id:login-message
         Sleep    5 seconds
-Klicka på "Book Safari"
-    Click Element    id:safari-nav
-Välj datum
-    Wait Until Element Is Enabled    id:safari-date    timeout=10s
-    #Input Text    id:safari-date    2026-03-24    clear
-    #Clear Element Text    id:safari-date
-    #Input Text            id:safari-date    20262402
-    Clear Element Text    id:safari-date
-    Input Text            id:safari-date    03242026
-    Press Keys            id:safari-date    ENTER
-    Sleep    10s
 
+Klicka på "Buy Tickets"
+    Click Element    id:tickets-nav
+    #Set Selenium Speed    1 seconds
+
+Välj biljettyp
+    [Arguments]    ${biljettyp}    ${kategori}
+      Select From List By Value    id:ticket-type    ${biljettyp}
+      Select From List By Value    id:ticket-category    ${kategori}
+Välj antal
+    [Arguments]    ${antal}
+      Input Text    id:ticket-quantity    ${antal}
+      #Sleep    1 seconds
+Lägg i varukorgen
+      Click Button    //*[@id="ticket-form"]/button
+      Handle Alert    ACCEPT
+      Sleep    5s
+
+Klicka på Book Safari
+    Click Element    id:safari-nav
+    Set Selenium Speed    1 seconds
+    Sleep    2s
+Välj korrekt datum
+    [Arguments]    ${datum}
+    Wait Until Element Is Enabled    id:safari-date    timeout=10s
+    Clear Element Text    id:safari-date
+    Input Text            id:safari-date    ${datum}
+    Press Keys            id:safari-date    ENTER
+    Sleep    5s
+    Handle Alert    ACCEPT
+Tryck Add to Cart
+      Click Button    css:button[onclick="Add to Cart"]
+Välj förtidigt datum
+     [Arguments]    ${datum}
+    Wait Until Element Is Enabled    id:safari-date    timeout=10s
+    Clear Element Text    id:safari-date
+    Input Text            id:safari-date    ${datum}
+    Press Keys            id:safari-date    ENTER
+    
+Felmeddeland     #Hanterar felmeddelandet "You cannot book a safari for a date in the past."
+    [Arguments]     ${förväntat_felmeddelande}
+    
+         Wait Until Element Is Visible    id:safari-message    timeout=5s
+    Element Should Contain           id:safari-message    ${förväntat_felmeddelande}
+Välj datum år 3026
+    [Arguments]    ${datum}
+    Wait Until Element Is Enabled    id:safari-date    timeout=10s
+    Clear Element Text    id:safari-date
+    Input Text            id:safari-date    ${datum}
+    Press Keys            id:safari-date    ENTER
+    Sleep    5s
+    Handle Alert    ACCEPT
