@@ -9,7 +9,7 @@ ${BROWSER}       chrome
 Besökare navigerar till KallePark
     Open Browser    ${BASE_URL}    ${BROWSER}
      Maximize Browser Window
-     Set Selenium Speed    0.5 seconds
+     Set Selenium Speed    0.1 seconds
 
 Klicka på "Buy Tickets"
     Click Element    id:tickets-nav
@@ -71,3 +71,11 @@ Tryck login igen
         #Wait Until Page Contains Element    id:login-message
         Wait Until Page Contains Element    id:home-section
         Sleep    2s
+
+Gå till varukorg
+    Click Link    Cart
+    Sleep    5s
+Ta bort biljetter
+    Click Button    css:button[onclick="removeFromCart(0)"]
+    Sleep    4s
+    Click Button    id:checkout-button

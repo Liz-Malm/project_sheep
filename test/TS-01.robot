@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    En reseledare med låg teknisk kunskap besöker sidan för första gången för att boka biljetter åt 
-...  ett resesälskap bestående av olika ålderskategorier.
+...  ett resesällskap bestående av olika ålderskategorier.
 Resource    SheepCodeAB.resource
 Suite Setup    Besökare navigerar till KallePark
 Suite Teardown    Close Browser
@@ -37,12 +37,21 @@ Logga in igen
     Tryck Login Igen
     Klicka På "Buy Tickets"
     Klicka på "Buy Tickets"
-    Välj biljettyp    biljettyp=Child    kategori=VIP    #Adult,Child,Senior   #Regular eller VIP
+    Välj biljettyp    biljettyp=Child    kategori=Regular    #Adult,Child,Senior   #Regular eller VIP
     Välj antal    4    #Välj antal biljetter
     Lägg i varukorgen
     Välj biljettyp    biljettyp=Adult    kategori=VIP    #Adult,Child,Senior   #Regular eller VIP
     Välj antal    4    #Välj antal biljetter
     Lägg i varukorgen
-     Välj biljettyp    biljettyp=Senior    kategori=Regular    #Adult,Child,Senior   #Regular eller VIP
+    Välj biljettyp    biljettyp=Senior    kategori=Regular    #Adult,Child,Senior   #Regular eller VIP
     Välj antal    2    #Välj antal biljetter
     Lägg i varukorgen
+    Välj biljettyp    biljettyp=Child    kategori=VIP    #Adult,Child,Senior   #Regular eller VIP
+    Välj antal    4    #Välj antal biljetter
+    Lägg i varukorgen
+
+Betala biljetter
+    [Tags]    [TS-01.5]    Reseledare    [G-PS]
+    [Documentation]    Reseledaren ska nu betala biljetterna
+    Gå till varukorg
+    Ta Bort Biljetter

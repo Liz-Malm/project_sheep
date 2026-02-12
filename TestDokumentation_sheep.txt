@@ -44,7 +44,7 @@ Användbarhetsanalys:
 
 -------------------------------------------------------------------------------------
 
-TS-01.2              Boka Safari         Reseledare blir omdirigerad    Reseledare
+TS-01.2              Boka Biljetter      Reseledare blir omdirigerad    Reseledare
                                          till login-sidan när hon
                                          försökt köpa biljetter.
 
@@ -58,21 +58,54 @@ Observationer: TS-01.2
 Användbarhetsanalys:
 * Lägg till en knapp bredvid logga in.
 
-TS-01.3              Boka Safari         Reseledare hittar knappen    Reseledare
+-------------------------------------------------------------------------------------
+
+TS-01.3              Logga in            Reseledare hittar knappen    Reseledare
                                          "Register" och försöker
                                          registrera ett nytt konto.
 
 Observationer: TS-01.3
-När användaren skriver in lösenord så får hon ingen indikation att lösenordet är för kort förän denna trycker på knappen
+* När användaren skriver in lösenord så får hon ingen indikation att lösenordet är för kort förän denna trycker på knappen
 Register
 
 
+
 Användbarhetsanalys:
-Tydligare information om hur lösenordet ska skapas. (Minst antal tecken, Specialtecken mm)
-Visa tydligt när ett nytt lösenord når upp till kriterierna.
+* Tydligare information om hur lösenordet ska skapas. (Minst antal tecken, Specialtecken mm)
+* Visa tydligt när ett nytt lösenord når upp till kriterierna.
+
+-------------------------------------------------------------------------------------
+
+TS-01.4              Registrera           Reseledare gör ett nytt    Reseledare
+                     Användare            försök att logga in och
+                                          boka biljetter.
 
 
-TS-01.4              Boka Safari         Reseledare gör ett nytt    Reseledare
-                                         försök att logga in och
-                                         boka biljetter.
+Obsevationer: TS-01.4
+* Bra att Register och Login försvinner vid lyckad inloggning samt att dem kommer tillbaka vid logout.
+* Man kan registrera endast ett användarnamn om man vill. Det finns inget ställa att skriva in kontaktuppgifter.
+
+Användbarhetsanalys:
+* Lägg till så att man måste uppge kontaktinformation av något slag.
+
+-------------------------------------------------------------------------------------
+TS-01.5              Genomför köp         Reseledare kollar     Reseledare
+                                          igenom sin beställning,
+                                          gör korrigering och
+                                          trycker på köp.
+
+Obsevationer: TS-01.5
+* Man kan inte välja betalsätt.
+* Man kan inte uppge vart man skickar biljetter. Kontaktinformation saknas.
+* Man kan inte se sina tidigare beställningar.
+* Man kan inte se någon historik.
+* Man kan inte se sina köpta biljetter på någonstans på hemsidan.
+* Kontaktinformation till företaget saknas.
+
+Obsevationer: TS-01.5
+* Lägg till en plats på hemsidan där man kan se historik, genomförda köp, aktiva biljetter och annan väsentlig
+information.
+* Lägg till Kontaktinformation till företag dit kunder kan vända sig vid problem eller frågor.
+
+
 TS-02
