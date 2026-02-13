@@ -58,7 +58,7 @@ Lägg i varukorgen
 
 Klicka på Book Safari
     Click Element    id:safari-nav
-    Set Selenium Speed    1 seconds
+    Set Selenium Speed    0.5 seconds
     Sleep    2s
 Välj korrekt datum
     [Arguments]    ${datum}
@@ -66,7 +66,7 @@ Välj korrekt datum
     Clear Element Text    id:safari-date
     Input Text            id:safari-date    ${datum}
     Press Keys            id:safari-date    ENTER
-    Sleep    5s
+    Sleep    2s
     Handle Alert    ACCEPT
 Tryck Add to Cart
       Click Button    css:button[onclick="Add to Cart"]
@@ -77,12 +77,30 @@ Välj förtidigt datum
     Input Text            id:safari-date    ${datum}
     Press Keys            id:safari-date    ENTER
     
-Felmeddeland     #Hanterar felmeddelandet "You cannot book a safari for a date in the past."
+Felmeddelande     #Hanterar felmeddelandet "You cannot book a safari for a date in the past."
     [Arguments]     ${förväntat_felmeddelande}
     
          Wait Until Element Is Visible    id:safari-message    timeout=5s
     Element Should Contain           id:safari-message    ${förväntat_felmeddelande}
 Välj datum år 3026
+    [Arguments]    ${datum}
+    Wait Until Element Is Enabled    id:safari-date    timeout=10s
+    Clear Element Text    id:safari-date
+    Input Text            id:safari-date    ${datum}
+    Press Keys            id:safari-date    ENTER
+    Sleep    5s
+    Handle Alert    ACCEPT
+
+Välj datumformat EU
+    [Arguments]    ${datum}
+    Wait Until Element Is Enabled    id:safari-date    timeout=10s
+    Clear Element Text    id:safari-date
+    Input Text            id:safari-date    ${datum}
+    Press Keys            id:safari-date    ENTER
+    Sleep    5s
+    Handle Alert    ACCEPT
+
+Välj datumformat GB
     [Arguments]    ${datum}
     Wait Until Element Is Enabled    id:safari-date    timeout=10s
     Clear Element Text    id:safari-date
