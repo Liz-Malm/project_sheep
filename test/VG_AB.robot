@@ -47,11 +47,12 @@ Välj annat datumformat EU
     ...    BUGG. Sidan kommer att släppa igenom ett datum som ser ut 02/02/60330
     Klicka på Book Safari
     Välj Datumformat EU    datum=20260330
-    Felmeddelande    #Denna kommer att fallera då jag lyckas få in ett felaktigt datum. och det bör vara en varning
+    Felmeddelande    #Denna kommer att fallera då jag lyckas få in ett felaktigt datum. och det bör vara en varning.
 
 Välj datumformat GB
     [Tags]    VG_AB     Date    Negative
     [Documentation]    testar att skriva datumformat i brittisk standard
-    ...    BUGG. Sidan kommer att släppa igenom ett datum som ser ut 02/02/60330
+    ...    BUGG. Sidan kommer att släppa igenom ett datum som ser ut 02/06/92026
     Klicka på Book Safari
     Välj Datumformat GB    datum=26092026
+    Felmeddelande    #Denna kommer att fallera då jag lyckas få in ett felaktigt datum. och det bör vara en varning.
