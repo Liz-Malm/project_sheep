@@ -10,9 +10,11 @@ Personas:
 
 2.(Bra datorvana) Förälder som vill boka biljett.
 
-3. (låg datorvana.) Reseledare som vill boka många biljetter och safari, hon har aldrig besökt hemsidan förut
+3. (låg datorvana.) Reseledare som vill boka biljetter till ett större sällskap i olika åldrar., hon har aldrig besökt hemsidan förut.
+Hon vill ha en smidig och snabb upplevelse, så hon kan gå vidare till nästa uppgift i sitt jobb.
 
 Testdesign: Jurasstina-Kalle Park
+TS-01 Reseledaren
 
 Test-ID            Funktion             Beskrivning             Persona
 -----------------------------------------------------------------------------
@@ -24,23 +26,86 @@ TS-01              Boka Biljett         Reseledare vill boka    Reseledare
                                         Safari turer.
 
 Observationer: TS-01.1
+* Klickar man "Buy Tickets now" under bilden så dirigeras man direkt till "Buy Tickets".
+Man bör dock skickas till sidan login istället, då det krävs att man ska vara inloggad för att köpa biljetter.
 * Det finns inga alternativ för att köpa biljetter utan att ha loggat in på sidan.
 * Ingen prisinformation på biljettyperna och biljett kategorierna
 * Det finns ingen övre gräns på hur många biljetter man kan köpa.
 * Om man skriver in negativt tal eller 0 så kommer varningen när man trycker på "Add to Cart"
 * Om man försöker lägga till biljetter till varukorg utan att vara inloggad. Så får man upp en JavaScript Alert istället
  för en ruta i vanlig Html. Detta ser omodernt ut och ger ett aggresivt uttryck om att användaren gjort fel.
-* Det finns ingen direkt länk från Login sidan till att Registrera användare.
 
 
 Användbarhetsanalys:
+* Tydlig information på startsidan att man måste registrera ett konto för att kunna köpa biljetter.
 * Begränsa antal max-biljetter.
 * Vi fel inmatning av antal biljetter så bör det synas tydligt i rutan direkt.
 * Skapa gästinlogg vid köp av biljetter.  Om nödvändigt så kan man skapa ett konto automatiskt vid betalning.
-* Lägg till en new user knapp bredvid login knappen på sidan login.
 
-TS-01.2              Boka Safari         Reseledare vill boka    Reseledare
-                                         Olika Safariturer till
-                                         Sällskapet
+-------------------------------------------------------------------------------------
+
+TS-01.2              Boka Biljetter      Reseledare blir omdirigerad    Reseledare
+                                         till login-sidan när hon
+                                         försökt köpa biljetter.
+
+
+Observationer: TS-01.2
+* Användaren har svårt förstå vart hon ska navigera för att registrera sig som användare
+* Det finns ingen möjlighet till att återställa lösenord eller glömt inloggningsnamn
+* Det finns ingen knapp för att registrera sig som ny användare i anslutning till logga in.
+*
+
+Användbarhetsanalys:
+* Lägg till en knapp bredvid logga in.
+
+-------------------------------------------------------------------------------------
+
+TS-01.3              Logga in            Reseledare hittar knappen    Reseledare
+                                         "Register" och försöker
+                                         registrera ett nytt konto.
+
+Observationer: TS-01.3
+* När användaren skriver in lösenord så får hon ingen indikation att lösenordet är för kort förän denna trycker på knappen
+Register
+
+
+
+Användbarhetsanalys:
+* Tydligare information om hur lösenordet ska skapas. (Minst antal tecken, Specialtecken mm)
+* Visa tydligt när ett nytt lösenord når upp till kriterierna.
+
+-------------------------------------------------------------------------------------
+
+TS-01.4              Registrera           Reseledare gör ett nytt    Reseledare
+                     Användare            försök att logga in och
+                                          boka biljetter.
+
+
+Obsevationer: TS-01.4
+* Bra att Register och Login försvinner vid lyckad inloggning samt att dem kommer tillbaka vid logout.
+* Man kan registrera endast ett användarnamn om man vill. Det finns inget ställa att skriva in kontaktuppgifter.
+
+Användbarhetsanalys:
+* Lägg till så att man måste uppge kontaktinformation av något slag.
+
+-------------------------------------------------------------------------------------
+TS-01.5              Genomför köp         Reseledare kollar     Reseledare
+                                          igenom sin beställning,
+                                          gör korrigering och
+                                          trycker på köp.
+
+Obsevationer: TS-01.5
+* Man kan inte välja betalsätt.
+* Man kan inte uppge vart man skickar biljetter. Kontaktinformation saknas.
+* Man kan inte se sina tidigare beställningar.
+* Man kan inte se någon historik.
+* Man kan inte se sina köpta biljetter på någonstans på hemsidan.
+* Kontaktinformation till företaget saknas.
+
+Obsevationer: TS-01.5
+* Lägg till en plats på hemsidan där man kan se historik, genomförda köp, aktiva biljetter och annan väsentlig
+information.
+* Lägg till Kontaktinformation till företag dit kunder kan vända sig vid problem eller frågor.
+
 
 TS-02
